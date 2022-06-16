@@ -13,16 +13,39 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fun fact about myself to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomFact() {
+    const facts = [
+      "I love anything matcha flavored.",
+      "My name has the meaning of sunrise and dawn.",
+      "I like Marvel Movies.",
+      "I am trying to learn ice skating.",
+      "My favorite anime is The Promised Neverland.",
+    ];
+  
+    // Pick a random greeting.
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = greeting;
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
+  }
+  
+  /**
+   * Gets messages as json from hello endpoint. Randomly select one.
+   */
+  async function getMessage() {
+    const res = await fetch("/hello");
+    const message = await res.json();
+    const oneMessage = message[Math.floor(Math.random() * message.length)];
+    document.getElementById("message-container").innerText = oneMessage;
+  }
+  
+  /**
+   * Dark Mode Toggle Control
+   */
+  document.getElementById("dark-mode-toggle").onclick = function (e) {
+    darkmode.toggleDarkMode();
+  };

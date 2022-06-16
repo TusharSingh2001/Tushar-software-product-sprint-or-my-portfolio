@@ -1,73 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Tushar's SPS Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light green" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.min.css"
-        rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.min.js"></script>
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/b9ea183eab.js" crossorigin="anonymous"></script>
-    <!-- Custom Imports -->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Tushar Singh Portfolio
+  </title>
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="content">
-        <button id="dark-mode-toggle">
-            <i class="fa-regular fa-moon"></i>
-        </button>
-        <div class="container" id="header">
-            <div class="row">
-                
-                <div class="col-md-10" id="name">
-                    <h1>Tushar Singh</h1>
-                    <p id="header-intro">This is my Google SPS Portfolio!</p>
-                    <div id="contacts">
-                        <a href="https://github.com/TusharSingh2001"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/tushar-singh-2986b5163/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-md">
-            <p>
-                Hello! This is Tushar (she/her). I am a junior majoring in Computer Science at Purdue University, located in West Lafayette, IN. 
-                Through my undergraduate studies at this university, I’ve taken a huge interest in the field of data science and computer science. I’m driven to make people’s lives better and 
-                I am fascinated by how technology can do that.
-                I am looking for an internship opportunity that will enable me to continue to grow in my role as a data scientist and tap into my passion for creating tools to help others.
-                
-            </p>
 
-            <h3>Projects</h3>
-
-            <ul class="list-group" id="projects">
-                <li class="list-group-item">
-                    <a href="https://github.com/TusharSingh2001/TheOriginalSimon">The Simon Game</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://github.com/TusharSingh2001/Social-Media-Profile-Application-Project">Social Media Application Project</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://github.com/TusharSingh2001/GamingWorkshopProject">Basic Gaming Project</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://github.com/ninja-turtle268/Snake-Water-Gun-Game">Snake-Water-Gun Gamew</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://github.com/ninja-turtle268/project-2">Diabetes Predictor</a>
-                </li>
-            </ul>
-
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Myself</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <script src="script.js"></script>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Tushar Singh</span>
+        </h1>
+        <p>A Junior Computer Science Student studying at Purdue University</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** My Projects ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>The Original Simon Game</h3>
+              <p>
+                A unique version of the Simon (game), which is an electronic game of short-term memory skill.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://ethereal-happy-chungkingosaurus.glitch.me/" target="_blank" class="link__text">
+                  Check out the Game <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/TusharSingh2001/TheOriginalSimon" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            
+            <div class="work__image-box">
+              <img src="./images/game.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Snake-Water-Gun Game</h3>
+              <p>
+                Snake Water Gun is one of the famous two-player game played by many people. It is a hand game in which the player randomly chooses any of the three forms i.e. snake, water, and gun. Here, we are going to implement this game using python. This python project is to build a game for a single player that plays with the computer
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Click here for Github Repo <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/ninja-turtle268/Snake-Water-Gun-Game/">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/game2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About Myself ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Myself</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+                Hi, I’m Tushar Singh.
+                I am a junior majoring in Computer Science at Purdue University, located in West Lafayette, IN. 
+                Through my undergraduate studies at this university, I’ve taken a huge interest in the field of computer science. I’m driven to make people’s lives better and 
+                I am fascinated by how technology can do that.
+                I am looking for an internship opportunity that will enable me to continue to grow in my role as a software engineer and tap into my passion for creating tools to help others
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1vRzv6WXPGAVha5W2xR8oXWSaLvnH-BKV/view?usp=sharing" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="/images/profile-picture.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact Me ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__info">
+        <p>
+          Feel free to reach out to me! I love connecting with new people and discussing my common interests with them!
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:s.tushar2001@gmail.com" class="btn">s.tushar2001@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/TusharS41478981/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/TusharSingh2001/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/tushar-singh-2986b5163/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div> -->
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./script.js"></script>
 </body>
 
 </html>
